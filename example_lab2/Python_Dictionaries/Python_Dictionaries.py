@@ -1,40 +1,69 @@
-#Nested Dictionaries
-myfamily={
-    "child1": {
-        "name": "Emil",
-        "year": 2004 
-    },
-    "child2": {
-        "name": "Tobias",
-        "year": 2007
-    },
-    "child3": {
-        "name": "Linus",
-        "year": 2011
-    }
+#Python Dictionaries
+thisdict={
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": "1964"
 }
-print(myfamily)
+
+"""Dictionary
+Dictionaries are used to store data values in key:value pairs.
+
+A dictionary is a collection which is ordered*, changeable and do not allow duplicates."""
+
+thisdict={
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": "1964"
+}
+print(thisdict)
 print("\n")
 
-child1={
-    "name": "Emil",
-    "year": 2004
+"""Dictionary Items
+Dictionary items are ordered, changeable, and does not allow duplicates.
+
+Dictionary items are presented in key:value pairs, and can be referred to by using the key name."""
+
+thisdict={
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": "1964"
 }
-child2={
-    "name": "Tobias",
-    "year": "2007"
-}
-child3={
-    "name": "Linus",
-    "year": 2011
-}
-myfamily={
-    "child1": child1,
-    "child2": child2,
-    "child3": child3
-}
-print(myfamily)
+print(thisdict["brand"])
 print("\n")
 
-#Access Items in Nested Dictionaries
-print(myfamily["child2"]["name"])
+#Duplicates Not Allowed
+thisdict={
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": "1964",
+    "year": "2020"
+}
+print(thisdict)
+print("\n")
+
+#Dictionary Length
+print(len(thisdict))
+print("\n")
+
+#Dictionary Items - Data Types
+thisdict={
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": "1964",
+    "colors": ["red", "white", "blue"]
+}
+print(thisdict)
+print("\n")
+
+#type()
+thisdict={
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": "1964"
+}
+print(type(thisdict))
+print("\n")
+
+#The dict() Constructor
+thisdict=dict(name="John", age="36", country="Norway")
+print(thisdict)
